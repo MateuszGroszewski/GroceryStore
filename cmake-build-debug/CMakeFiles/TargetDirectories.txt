@@ -1,0 +1,3 @@
+C:/Users/neono/CLionProjects/GroceryStore/cmake-build-debug/CMakeFiles/GroceryStore.dir
+C:/Users/neono/CLionProjects/GroceryStore/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/neono/CLionProjects/GroceryStore/cmake-build-debug/CMakeFiles/rebuild_cache.dir
