@@ -61,17 +61,29 @@ build CMakeFiles/GroceryStore.dir/source/product.cpp.obj: CXX_COMPILER__GroceryS
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
   OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
 
-build CMakeFiles/GroceryStore.dir/include/category.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/include/category.cpp || cmake_object_order_depends_target_GroceryStore
-  DEP_FILE = CMakeFiles\GroceryStore.dir\include\category.cpp.obj.d
+build CMakeFiles/GroceryStore.dir/source/category.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/source/category.cpp || cmake_object_order_depends_target_GroceryStore
+  DEP_FILE = CMakeFiles\GroceryStore.dir\source\category.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
-  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\include
+  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
 
-build CMakeFiles/GroceryStore.dir/include/vat.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/include/vat.cpp || cmake_object_order_depends_target_GroceryStore
-  DEP_FILE = CMakeFiles\GroceryStore.dir\include\vat.cpp.obj.d
+build CMakeFiles/GroceryStore.dir/source/vat.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/source/vat.cpp || cmake_object_order_depends_target_GroceryStore
+  DEP_FILE = CMakeFiles\GroceryStore.dir\source\vat.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
-  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\include
+  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
+
+build CMakeFiles/GroceryStore.dir/source/database.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/source/database.cpp || cmake_object_order_depends_target_GroceryStore
+  DEP_FILE = CMakeFiles\GroceryStore.dir\source\database.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GroceryStore.dir
+  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
+
+build CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj: CXX_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/source/profitmargin.cpp || cmake_object_order_depends_target_GroceryStore
+  DEP_FILE = CMakeFiles\GroceryStore.dir\source\profitmargin.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GroceryStore.dir
+  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
 
 
 # =============================================================================
@@ -81,7 +93,7 @@ build CMakeFiles/GroceryStore.dir/include/vat.cpp.obj: CXX_COMPILER__GroceryStor
 #############################################
 # Link the executable GroceryStore.exe
 
-build GroceryStore.exe: CXX_EXECUTABLE_LINKER__GroceryStore_Debug CMakeFiles/GroceryStore.dir/main.cpp.obj CMakeFiles/GroceryStore.dir/source/product.cpp.obj CMakeFiles/GroceryStore.dir/include/category.cpp.obj CMakeFiles/GroceryStore.dir/include/vat.cpp.obj
+build GroceryStore.exe: CXX_EXECUTABLE_LINKER__GroceryStore_Debug CMakeFiles/GroceryStore.dir/main.cpp.obj CMakeFiles/GroceryStore.dir/source/product.cpp.obj CMakeFiles/GroceryStore.dir/source/category.cpp.obj CMakeFiles/GroceryStore.dir/source/vat.cpp.obj CMakeFiles/GroceryStore.dir/source/database.cpp.obj CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
