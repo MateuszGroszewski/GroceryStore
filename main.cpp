@@ -1,21 +1,21 @@
 #include <iostream>
 #include "include/product.h"
-#include <sqlite3.h>
+#include "sqlite/sqlite3.h"
 
 int main() {
-    //new Product("Milk", Category::DAIRYPRODUCTS, Vat::REDUCED_VAT, ProfitMargin::STANDARD);
+    Product prod1 ("Milk", Category::DAIRYPRODUCTS, Vat::REDUCED_VAT, ProfitMargin::STANDARD);
     sqlite3* db;
+    int rc;
     char* errMsg = nullptr;
 
     // Otwarcie połączenia z bazą danych SQLite
-    int rc = sqlite3_open("grocerystorestock.db", &db);
+    rc = sqlite3_open("BD.db", &db);
     if (rc != SQLITE_OK) {
         std::cerr << "Nie można otworzyć bazy danych: " << sqlite3_errmsg(db) << std::endl;
         sqlite3_close(db);
         return 1;
     }
-/*
-    // Zapytanie SQL tworzące tabelę
+
     const char* sql = "CREATE TABLE IF NOT EXISTS Products ("
                       "ID INTEGER PRIMARY KEY AUTOINCREMENT,"
                       "productName TEXT,"
@@ -27,7 +27,6 @@ int main() {
                       "profitMargin INTEGER"
                       ");";
 
-    // Wykonanie zapytania SQL
     rc = sqlite3_exec(db, sql, nullptr, nullptr, &errMsg);
     if (rc != SQLITE_OK) {
         std::cerr << "Błąd przy tworzeniu tabeli: " << errMsg << std::endl;
@@ -36,9 +35,6 @@ int main() {
         return 1;
     }
 
-    // Zamknięcie połączenia z bazą danych
-    sqlite3_close(db);
 
-    std::cout << "Tabela została utworzona pomyślnie." << std::endl;*/
     return 0;
 }

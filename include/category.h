@@ -5,6 +5,8 @@
 #ifndef GROCERYSTORE_CATEGORY_H
 #define GROCERYSTORE_CATEGORY_H
 
+#include <string>
+
 
 enum class Category {
     DAIRYPRODUCTS,
@@ -14,7 +16,9 @@ enum class Category {
     FRUITS,
     VEGETABLES,
     BEVERAGES
+
 };
+
 
 
 #endif //GROCERYSTORE_CATEGORY_H

@@ -85,6 +85,12 @@ build CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj: CXX_COMPILER__Gro
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
   OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\source
 
+build CMakeFiles/GroceryStore.dir/sqlite/sqlite3.c.obj: C_COMPILER__GroceryStore_unscanned_Debug C$:/Users/neono/CLionProjects/GroceryStore/sqlite/sqlite3.c || cmake_object_order_depends_target_GroceryStore
+  DEP_FILE = CMakeFiles\GroceryStore.dir\sqlite\sqlite3.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GroceryStore.dir
+  OBJECT_FILE_DIR = CMakeFiles\GroceryStore.dir\sqlite
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GroceryStore
@@ -93,7 +99,7 @@ build CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj: CXX_COMPILER__Gro
 #############################################
 # Link the executable GroceryStore.exe
 
-build GroceryStore.exe: CXX_EXECUTABLE_LINKER__GroceryStore_Debug CMakeFiles/GroceryStore.dir/main.cpp.obj CMakeFiles/GroceryStore.dir/source/product.cpp.obj CMakeFiles/GroceryStore.dir/source/category.cpp.obj CMakeFiles/GroceryStore.dir/source/vat.cpp.obj CMakeFiles/GroceryStore.dir/source/database.cpp.obj CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj
+build GroceryStore.exe: CXX_EXECUTABLE_LINKER__GroceryStore_Debug CMakeFiles/GroceryStore.dir/main.cpp.obj CMakeFiles/GroceryStore.dir/source/product.cpp.obj CMakeFiles/GroceryStore.dir/source/category.cpp.obj CMakeFiles/GroceryStore.dir/source/vat.cpp.obj CMakeFiles/GroceryStore.dir/source/database.cpp.obj CMakeFiles/GroceryStore.dir/source/profitmargin.cpp.obj CMakeFiles/GroceryStore.dir/sqlite/sqlite3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GroceryStore.dir
