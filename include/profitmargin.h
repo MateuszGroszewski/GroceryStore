@@ -7,9 +7,9 @@
 
 
 enum class ProfitMargin {
-    STANDARD = 15,
-    HIGH = 30,
-    LOW = 10
+    STANDARD_15 = 15,
+    HIGH_40 = 40,
+    LOW_10 = 10
 };
 
 

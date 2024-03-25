@@ -16,5 +16,7 @@ add_executable(GroceryStore main.cpp
         source/profitmargin.cpp
         include/profitmargin.h
         sqlite/sqlite3.h
-        sqlite/sqlite3.c)
+        sqlite/sqlite3.c
+        source/menu.cpp
+        include/menu.h)
 

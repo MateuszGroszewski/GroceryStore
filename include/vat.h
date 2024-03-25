@@ -7,9 +7,9 @@
 
 
 enum class Vat {
-    STANDARD_VAT = 23,
-    REDUCED_VAT = 5,
-    ZERO_VAT = 0
+    VAT_23 = 23,
+    VAT_5 = 5,
+    VAT_0 = 0
 };
 
 

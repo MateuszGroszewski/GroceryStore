@@ -1,17 +1,16 @@
 #include <iostream>
 #include "include/product.h"
 #include "sqlite/sqlite3.h"
+#include "include/menu.h"
 
 int main() {
-    Product prod1 ("Milk", Category::DAIRYPRODUCTS, Vat::REDUCED_VAT, ProfitMargin::STANDARD);
     sqlite3* db;
     int rc;
     char* errMsg = nullptr;
 
-    // Otwarcie połączenia z bazą danych SQLite
     rc = sqlite3_open("BD.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Nie można otworzyć bazy danych: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "Can't open database: " << sqlite3_errmsg(db) << std::endl;
         sqlite3_close(db);
         return 1;
     }
@@ -21,7 +20,7 @@ int main() {
                       "productName TEXT,"
                       "retailPrice REAL,"
                       "wholeSalePrice REAL,"
-                      "InStock INTEGER,"
+                      "inStock INTEGER,"
                       "category TEXT,"
                       "vat INTEGER,"
                       "profitMargin INTEGER"
@@ -29,12 +28,17 @@ int main() {
 
     rc = sqlite3_exec(db, sql, nullptr, nullptr, &errMsg);
     if (rc != SQLITE_OK) {
-        std::cerr << "Błąd przy tworzeniu tabeli: " << errMsg << std::endl;
+        std::cerr << "Error while opening database: " << errMsg << std::endl;
         sqlite3_free(errMsg);
         sqlite3_close(db);
         return 1;
     }
 
 
+    Product newProduct ("Milk", Category::DAIRYPRODUCTS, Vat::VAT_23, 100.0 ,ProfitMargin::STANDARD_15);
+
+    Menu::displayMenu();
+
+    sqlite3_close(db);
     return 0;
 }
