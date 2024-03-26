@@ -2,7 +2,7 @@
 #include "../sqlite/sqlite3.h"
 
 void Product::addNewProduct(Product newProduct) {
-
+/*
     sqlite3_stmt* stmt;
 
     std::string insertSql = "INSERT INTO Products (productName, retailPrice, wholeSalePrice, inStock, category, vat, profitMargin)"
@@ -15,7 +15,7 @@ void Product::addNewProduct(Product newProduct) {
     sqlite3_bind_text(stmt, 5, categoryToString(newProduct.category).c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_int(stmt, 6, newProduct.getVat());
     sqlite3_bind_int(stmt, 7, newProduct.getProfitMargin());
-
+*/
 }
 
 std::string Product::getName() {
@@ -43,26 +43,7 @@ float Product::generateRetailPrice() {
     return retailPrice;
 }
 
-std::string Product::categoryToString(Category category){
-    switch(category) {
-        case Category::DAIRYPRODUCTS:
-            return "DAIRYPRODUCTS";
-        case Category::HOUSEHOLDCHEMICALS:
-            return "HOUSEHOLDCHEMICALS";
-        case Category::BREAD:
-            return "BREAD";
-        case Category::MEAT:
-            return "MEAT";
-        case Category::FRUITS:
-            return "FRUITS";
-        case Category::VEGETABLES:
-            return "VEGETABLES";
-        case Category::BEVERAGES:
-            return "BEVERAGES";
-        default:
-            return "UNKNOWN";
-    }
-}
+
 
 
 

@@ -35,7 +35,7 @@ int main() {
     }
 
 
-    Product newProduct ("Milk", Category::DAIRYPRODUCTS, Vat::VAT_23, 100.0 ,ProfitMargin::STANDARD_15);
+    //Product newProduct ("Milk", Category::DAIRYPRODUCTS, Vat::VAT_23, 100.0 ,ProfitMargin::STANDARD_15);
 
     Menu::displayMenu();
 
