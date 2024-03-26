@@ -10,6 +10,8 @@
 
 class Product  {
 public:
+    Product(){};
+
     Product(std::string newProductName,
             Category newProductCategory,
             Vat newProductVat,
@@ -23,7 +25,7 @@ public:
 
     void addNewProduct(Product product);
     //void updateWholeSalePrice(int productID, float newWholeSalePrice);
-    static std::string categoryToString(Category category);
+
 
     std::string getName();
     int getVat();

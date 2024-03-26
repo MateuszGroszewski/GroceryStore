@@ -20,5 +20,6 @@ enum class Category {
 };
 
 
+[[nodiscard]]std::string categoryToString(Category category);
 
 #endif //GROCERYSTORE_CATEGORY_H
